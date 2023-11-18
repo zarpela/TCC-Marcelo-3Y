@@ -23,4 +23,4 @@ response = rq.post(url, headers=headers, data=json.dumps(data))
 
 response_json = response.json()
 
-print(response_json)
+print(response_json)# to sem credito entao outputa nada, mas em geral é pra tar funcionando
