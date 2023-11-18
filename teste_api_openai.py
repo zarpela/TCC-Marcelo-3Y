@@ -1,11 +1,17 @@
 import requests as rq
 import json
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+SECRET_KEY = os.getenv("SECRET_KEY")
+
 
 url = "https://api.openai.com/v1/chat/completions"
 
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer CENSURADO"
+    "Authorization": "Bearer " + SECRET_KEY
 }
 data = {
     "model": "gpt-3.5-turbo",
