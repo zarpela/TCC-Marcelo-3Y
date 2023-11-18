@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY_GPT = os.getenv("SECRET_KEY_GPT")
 
 
 url = "https://api.openai.com/v1/chat/completions"
